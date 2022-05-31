@@ -1,0 +1,10 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+README.md
+FAQ.md
+/.idea
+.DS_Store
+node_modules

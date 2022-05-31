@@ -1,1 +1,0 @@
-# ugommirikwe.github.io
