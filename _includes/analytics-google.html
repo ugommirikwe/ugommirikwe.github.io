@@ -2,8 +2,11 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics-google }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    var host = window.location.hostname;
+    if (host != "localhost") {
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', '{{ site.analytics-google }}');
+        gtag('config', '{{ site.analytics-google }}');
+    }
 </script>
