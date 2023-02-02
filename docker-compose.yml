@@ -2,15 +2,13 @@ version: '3.0'
 
 services:
   site:
-    build: .
-    image: ugommirikwe.github.io:0.1.0
+    image: jekyll/jekyll:3.8
     container_name: ugommirikwe.com
-    working_dir: /var/www/html
     environment:
       - JEKYLL_ENV=development
-    command: sh -c "bundle install && bundle exec jekyll serve --watch --incremental --livereload --verbose --host=0.0.0.0"
+    command: sh -c "bundle update && bundle exec jekyll serve --watch --force_polling --incremental --livereload --verbose --host=0.0.0.0"
     ports:
       - 4004:4000
+      - 35729:35729
     volumes:
-      - .:/var/www/html:rw
-      - ./vendor/bundle:/usr/local/bundle:cached
+      - .:/srv/jekyll:Z

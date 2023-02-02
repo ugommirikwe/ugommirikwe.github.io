@@ -19,7 +19,7 @@ resume: false
 resume-external: false
 resume-url: assets/UgoMmirikwe_CV.pdf
 
-url: "https://ugommirikwe.com" # https://ugommirikwe.github.io
+url: "https://ugommirikwe.com"
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
