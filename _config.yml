@@ -16,8 +16,8 @@ dark-theme: false
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-resume-external: true
-resume-url: assets/UgoMmirikwe_CV.pdf
+resume-external: false
+resume-url: /assets/UgoMmirikwe_CV.pdf
 
 url: "https://ugommirikwe.com"
 # your url: https://USERNAME.github.io
