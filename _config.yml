@@ -22,7 +22,7 @@ resume-url: assets/UgoMmirikwe_CV.pdf
 url: "https://ugommirikwe.com"
 # your url: https://USERNAME.github.io
 
-permalink: /:title/
+permalink: /blog/:title/
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
@@ -57,7 +57,7 @@ width: normal
 
 # if you do/don't need pagination, toggle 'enabled' between true/false below
 pagination:
-  enabled: false
+  enabled: true
   sort_reverse: true # display recent posts first
   title: ":title" # Changing this will mess up the header display logic
   per_page: 5
@@ -68,7 +68,7 @@ projects: false
 
 # if you don't need "about" or "blog", comment them out below
 about: true
-blog: false
+blog: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
@@ -91,7 +91,7 @@ animation: true
 # add default values to specific pages or layouts
 defaults:
   - scope:
-      path: "" # an empty string here means all files in the project
+      path: "assets/images" # an empty string here means all files in the project
       layout: "post"
     values:
       # setting all post to not hidden by default,

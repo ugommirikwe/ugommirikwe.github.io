@@ -36,7 +36,7 @@ layout: compress
 <body>
     <div class="image-bg wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.layout == "post" %}
-            <div class="post">
+            <div class="post {% if page.headerImage %}with-featured-image{% endif %}">
         {% else %}
             {% if showHeader != true %}
                 <div class="page {{ page.title | downcase }}">
