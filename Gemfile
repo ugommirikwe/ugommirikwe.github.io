@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem "ffi", "= 1.16.3"
 
 group :jekyll_plugins do
     gem 'github-pages', group: :jekyll_plugins

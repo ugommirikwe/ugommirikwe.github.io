@@ -1,5 +1,3 @@
-version: '3.0'
-
 services:
   site:
     image: jekyll/jekyll:3.8

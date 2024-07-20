@@ -50,3 +50,11 @@ layout: page
 {% if site.disqus.categories contains page.category %}
     {% include disqus.html %}
 {% endif %}
+
+<script>
+    gtag('event', 'view_item', {
+      'event_category': 'Blog',
+      'event_label': '{{ page.title | escape }}',
+      'custom_dimension{{ page_title }}': '{{ page.title | escape }}'
+    });
+</script>

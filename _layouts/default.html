@@ -5,8 +5,8 @@ layout: compress
 <html lang="en">
 <head>
 
-    {% if site.analytics-google %}
-        {% include analytics-google.html %}
+    {% if jekyll.environment == 'production' and site.analytics-google %}
+    {% include analytics-google.html %}
     {% endif %}
 
     <meta charset="utf-8">
